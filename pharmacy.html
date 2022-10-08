@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Pharmacy</title>
+    <style>
+        body {
+            margin: 0%;
+            width: 100%;
+            height: auto;
+        }
+
+        header {
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            font-size: xx-large;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.685);
+        }
+    #img_section{
+    margin: 3px;
+    height: 400px;
+    min-height: 300px;
+    text-align: center;
+    background-color: rgb(163, 228, 228);
+    border: 5px solid steelblue;
+    animation-name: image-change;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+        @keyframes image-change {
+    0%{
+        background-image: url(Images\Images\Animation\ani1.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+   25%{
+        background-image: url(Images\Images\Animation\ani2.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+    50%{
+        background-image: url(Images\Images\Animation\ani3.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+    75%{
+        background-image: url(Images\Images\Animation\ani4.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+    100%{
+        background-image: url(Images\Images\Animation\ani5.jpg); 
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-size: cover;
+    }
+}
+        .one {
+  border-style: solid;
+  border: 2px solid rgba(68, 0, 255, 0.84);
+  border-radius: 5px;
+ }
+ .producthead{
+    padding-left: 30px;
+}
+
+.product{
+    padding: 5px;
+    width: 14%;
+    min-width: 140px;
+    min-height: 180px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: rgb(243, 243, 253);
+    box-shadow: 5px 5px 10px gainsboro;
+}
+.product >h4, .product > p{
+    margin: 0%;
+}
+
+.product > p{
+    font-size: 14px;
+    color: rgb(43, 124, 230);
+}
+.product img{
+    width: 98%;
+    height: 100px;
+}
+.product button{
+    width: 100%;
+    background-color: lavender;
+    font-size: 16px;
+    border: 1px solid blue;
+    color: orange;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.product button:active{
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+    
+}
+        footer {
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            padding: 20px;
+            position: relative;
+            bottom: 0%;
+            text-align: center;
+        }
+        #navigate {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0%;
+            z-index: 1;
+        }
+
+
+        .menu {
+            margin: 0%;
+            background-color: rgb(0, 0, 0, 0.5);
+        }
+
+        .menu li a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .menu li {
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .menu li:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            ;
+        }
+
+        ******* .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <header>Pharmacy</header>
+
+    <section id="navigate">
+        <nav>
+            <ul class="menu">
+                <li><a href='#'>Home</a></li>
+                <li class="dropdown">Our Medicines
+                    <div class="dropdown-content">
+                        <p>Fever</p>
+                        <p>Muscle Pains</p>
+                        <p>Cold and Cough</p>
+                    </div>
+
+                </li>
+
+                <li class="dropdown">Health Care
+                    <div class="dropdown-content">
+                        <p>Baby Care</p>
+                        <p>Skin Care</p>
+                        <p>Home Care</p>
+                        <p>Personal Care</p>
+                        <p>Pet Care</p>
+                    </div>
+                </li>
+
+
+                <li><a href="labtest.html">Lab Test</a></li>
+            </ul>
+        </nav>
+    </section>
+    
+      <section id="img_section">
+    </section>
+    <marquee class="one" width="100%" direction="right" height="200px">
+               <img src="..\FrontendHTMLAssignment\Images\Images\Animation\ani1.jpg" width="500" height="200"  />
+               <img src="..\FrontendHTMLAssignment\Images\Images\Animation\ani2.jpg" width="500" height="200"  />
+               <img src="..\FrontendHTMLAssignment\Images\Images\Animation\ani3.jpg" width="500" height="200" />
+               <img src="..\FrontendHTMLAssignment\Images\Images\Animation\ani4.jpg" width="500" height="200" />
+               <img src="..\FrontendHTMLAssignment\Images\Images\Animation\ani5.jpg" width="500" height="200"  />
+        </marquee>
+
+        <section class="producthead">
+            <h2>Covid Care</h2>
+            <div class="product">
+                <h4>Covid Test Kit</h4>
+                <img src="..\FrontendHTMLAssignment\Images\Images\Products\c1.jpg" alt="">
+                <p>Rs. <span>40</span></p>
+                <p>Offer: Rs. <span>30</span>/-</p>
+                <button>Add to cart</button>
+            </div>
+    
+            <div class="product">
+                <h4>Covid Essentials</h4>
+                <img src="..\FrontendHTMLAssignment\Images\Images\Products\c2.jpg" alt="">
+                <p>Rs. <span>240</span></p>
+                <p>Offer: Rs. <span>170</span>/-</p>
+                <button>Add to cart</button>
+            </div>
+    
+            <div class="product">
+                <h4>Sanitizer Bottle</h4>
+                <img src="..\FrontendHTMLAssignment\Images\Images\Products\c3.jpg" alt="">
+                <p>Rs. <span>99</span></p>
+                <p>Offer: Rs. <span>87</span>/-</p>
+                <button>Add to cart</button>
+            </div>
+    
+            <div class="product">
+                <h4>Mask</h4>
+                <img src="..\FrontendHTMLAssignment\Images\Images\Products\c4.jpg" alt="">
+                <p>Rs. <span>45</span></p>
+                <p>Offer: Rs. <span>30</span>/-</p>
+                <button>Add to cart</button>
+            </div>
+        </section>
+    
+        <section class="producthead">
+            <h2>Diabetes Care</h2>
+    
+            <div class="product">
+                <h4>BGR 34</h4>
+                <img src="..\FrontendHTMLAssignment\Images\Images\Products\d1.jpg" alt="">
+                <p>Rs. <span>45</span></p>
+                <p>Offer: Rs. <span>30</span>/-</p>
+                <button>Add to cart</button>
+            </div>
+    
+            <div class="product">
+                <h4>Dabar Chyawanprakash</h4>
+                <img src="..\FrontendHTMLAssignment\Images\Images\Products\d2.jpg" alt="">
+                <p>Rs. <span>45</span></p>
+                <p>Offer: Rs. <span>30</span>/-</p>
+                <button>Add to cart</button>
+            </div>
+            
+            <div class="product">
+                <h4>Colgate Sugarfree</h4>
+                <img src="..\FrontendHTMLAssignment\Images\Images\Products\d3.jpg" alt="">
+                <p>Rs. <span>45</span></p>
+                <p>Offer: Rs. <span>30</span>/-</p>
+                <button>Add to cart</button>
+            </div>
+    
+            <div class="product">
+                <h4>Unibic Cookies Sugar free</h4>
+                <img src="..\FrontendHTMLAssignment\Images\Images\Products\d4.png" alt="">
+                <p>Rs. <span>35</span></p>
+                <p>Offer: Rs. <span>30</span>/-</p>
+                <button>Add to cart</button>
+            </div>
+    <footer>@copyright. Only for demonstration
+        purposes</footer>
+
+
+    </html>
